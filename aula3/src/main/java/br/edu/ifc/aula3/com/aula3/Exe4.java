@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class Exe4 {
      public static void main(String args[]) {
 
-        double peso, altura, imc;
+        double peso, altura;
         String nome;
 
        // JOptionPane.showMessageDialog(null, "Calcula Imc");
@@ -25,17 +25,20 @@ public class Exe4 {
 
         altura = Double.parseDouble(JOptionPane.showInputDialog("digite sua altura"));
 
-        imc = peso / (altura * altura);
+        //imc = peso / (altura * altura);
 
         
+        double imc = calculaImc(peso, altura);
         
-        
-
-        JOptionPane.showMessageDialog(null, "Imc: " + imc+ " "+retornaImc(imc));
+    JOptionPane.showMessageDialog(null, "Imc: " + imc+ " "+retornaImc(imc));
+       
 
     }
 
-    
+    public static double calculaImc(double peso, double altura){
+        
+        return peso/(altura*altura);
+    }
     
     public static String retornaImc(double imc){
           String imcResultado = "";
@@ -72,4 +75,5 @@ public class Exe4 {
         
     }
 
+    
 }
