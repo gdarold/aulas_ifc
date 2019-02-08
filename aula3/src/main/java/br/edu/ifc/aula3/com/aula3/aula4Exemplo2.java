@@ -6,7 +6,6 @@
 package br.edu.ifc.aula3.com.aula3;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
 import javax.swing.JOptionPane;
 
 /**
