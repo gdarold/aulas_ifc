@@ -17,25 +17,25 @@ public class aula4Exe4 {
 
         int[] lista = {1, 5, 20, 30, 4, 2, 25, 13};
         int digitado;
+        int verifica = 0;
 
-        boolean op= false;
+        boolean op = false;
         digitado = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero de 1 a 25 "));
 
         for (int i = 0; i < lista.length; i++) {
 
             if (lista[i] == digitado) {
-                JOptionPane.showMessageDialog(null, "Acertou mizerave!!!");
-
+                JOptionPane.showMessageDialog(null, "Acertou mizerave!!!, posição:" + i);
+                verifica++;
             } else {
                 op = true;
             }
 
         }
-        if (op) {
+        if (verifica == 0) {
 
             JOptionPane.showMessageDialog(null, "numero incorreto");
         }
-
     }
 
 }
