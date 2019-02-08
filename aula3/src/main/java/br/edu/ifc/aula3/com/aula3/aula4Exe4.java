@@ -19,7 +19,7 @@ public class aula4Exe4 {
         int digitado;
         int verifica = 0;
 
-        boolean op = false;
+       
         digitado = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero de 1 a 25 "));
 
         for (int i = 0; i < lista.length; i++) {
@@ -28,7 +28,7 @@ public class aula4Exe4 {
                 JOptionPane.showMessageDialog(null, "Acertou mizerave!!!, posição:" + i);
                 verifica++;
             } else {
-                op = true;
+              
             }
 
         }
