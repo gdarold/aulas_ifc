@@ -31,7 +31,7 @@ public class Aula4Exe8 {
 
         for (int i = 0; i < 5; i++) {
 
-            soma += soma + numeros[i];
+            soma += numeros[i];
         }
 
         return soma;
