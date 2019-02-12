@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author aluno
  */
-public class aula4Exe4 {
+public class Aula4Exe4 {
 
     public static void main(String[] main) {
 

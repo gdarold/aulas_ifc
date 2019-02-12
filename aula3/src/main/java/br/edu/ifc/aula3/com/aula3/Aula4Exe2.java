@@ -10,7 +10,7 @@ package br.edu.ifc.aula3.com.aula3;
  *
  * @author aluno
  */
-public class aula4Exe2 {
+public class Aula4Exe2 {
     
     
     public static void main(String[] main) {

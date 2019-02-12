@@ -11,7 +11,7 @@ import java.util.Iterator;
  *
  * @author aluno
  */
-public class aula4 {
+public class Aula4 {
 
     public static void main(String[] main) {
 

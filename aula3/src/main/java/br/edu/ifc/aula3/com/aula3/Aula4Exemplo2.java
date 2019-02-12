@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author aluno
  */
-public class aula4Exemplo2 {
+public class Aula4Exemplo2 {
 
     public static void main(String[] main) {
 
@@ -34,9 +34,9 @@ public class aula4Exemplo2 {
             }
 
             System.out.println(notas.length);
-            System.out.println(aula4Exemplo2.somarNotas(notas));
+            System.out.println(Aula4Exemplo2.somarNotas(notas));
 
-            System.out.println(aula4Exemplo2.calcularMediaNotas(notas));
+            System.out.println(Aula4Exemplo2.calcularMediaNotas(notas));
             System.out.println(Arrays.asList(notas));
 
             Arrays.sort(notas);
