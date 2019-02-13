@@ -14,17 +14,22 @@ public class Veiculo {
     public String cor;
     private int ano, velocidade;
     protected boolean ligado;
+    private static final int VELOCIDADE_MAXIMA = 180; // constante
+    private static int qtadeVeiculos; //global
 
     public Veiculo(int ano, int velocidade) {
         this.ano = ano;
         this.velocidade = velocidade;
         this.ligado = false;
+        qtadeVeiculos++;
+        
     }
 
 // Método construtor sem parâmetros
     public Veiculo() {
 // fazendo referência ao outro construtor da classe
         this(2019, 0);
+        
     }
 
     public void ligar() {
@@ -86,5 +91,14 @@ public class Veiculo {
             this.velocidade -= 10;
         }
     }
+
+    public static int getQtadeVeiculos() {
+        return qtadeVeiculos;
+    }
+
+    public static void setQtadeVeiculos(int qtadeVeiculos) {
+        Veiculo.qtadeVeiculos = qtadeVeiculos;
+    }
+    
 
 }
