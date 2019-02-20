@@ -18,12 +18,16 @@ public class Testeconta {
         
         nova.deposita(100);
         nova.exibeSaldo();
-        nova.saca(50);
+        //nova.saca(50);
         nova.exibeSaldo();
-        nova.saca(50);
+        //nova.saca(50);
         
-        
-        
+        ContaBancaria nova2 = new ContaBancaria();
+        nova2.deposita(500);
+        nova2.exibeSaldo();
+        nova2.transfere(50, nova);
+        nova2.exibeSaldo();
+        nova.exibeSaldo();
         
     }
         
