@@ -34,10 +34,12 @@ public class Lutador {
     }
 
     public void ganharLuta() {
+        System.out.println(this.nome + " é o vencedor");
         this.vitorias++;
     }
 
     public void perderLuta() {
+        System.out.println(this.nome + " é o perdedor");
         this.derrotas++;
     }
 
@@ -139,7 +141,4 @@ public class Lutador {
         return "Lutador{" + "nome=" + nome + ", nacionalidade=" + nacionalidade + ", idade=" + idade + ", altura=" + altura + ", peso=" + peso + ", vitorias=" + vitorias + ", derrotas=" + derrotas + ", empates=" + empates + ", categoria=" + categoria + '}';
     }
 
-   
-    
-    
 }
