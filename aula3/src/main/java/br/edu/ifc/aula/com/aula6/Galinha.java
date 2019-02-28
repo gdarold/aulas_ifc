@@ -27,4 +27,10 @@ public class Galinha extends Animal {
         JOptionPane.showMessageDialog(null, " co, co");
 
     }
+
+    @Override
+    public void correr() {
+       JOptionPane.showMessageDialog(null, "ciscando");
+        
+    }
 }

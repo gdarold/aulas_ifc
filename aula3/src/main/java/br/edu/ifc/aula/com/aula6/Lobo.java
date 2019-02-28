@@ -11,26 +11,25 @@ import javax.swing.JOptionPane;
  *
  * @author aluno
  */
-public class Cachorro extends Animal {
-
-    public Cachorro() {
-        this(3, "osso");
-
+public class Lobo extends Animal{
+    
+    public Lobo(){
+        super(4,"galinha");
     }
 
-    public Cachorro(double peso, String comida) {
+    public Lobo(double peso, String comida) {
         super(peso, comida);
-        super.id = 1;
-    }
-
-    @Override
-    public void fazerBarulho() {
-        JOptionPane.showMessageDialog(null, "Au, Au");
-
+        super.id= 3;
     }
 
     @Override
     public void correr() {
-        JOptionPane.showMessageDialog(null, "que cachorro veloz");
+        JOptionPane.showMessageDialog(null, "Que lobito");
+   }
+
+    @Override
+    public void fazerBarulho() {
+        JOptionPane.showMessageDialog(null, "auuuuuu, auuuuu");
     }
+    
 }

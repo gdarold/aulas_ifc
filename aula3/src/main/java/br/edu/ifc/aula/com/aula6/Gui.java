@@ -109,6 +109,11 @@ public class Gui extends javax.swing.JFrame {
             public void fazerBarulho() {
                 JOptionPane.showMessageDialog(null, "Miauu");
             }
+
+             @Override
+             public void correr() {
+               JOptionPane.showMessageDialog(null, "lisp");
+             }
         };
          generico.fazerBarulho();
     }//GEN-LAST:event_jButton1ActionPerformed

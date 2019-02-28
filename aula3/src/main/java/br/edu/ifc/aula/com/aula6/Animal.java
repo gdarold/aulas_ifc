@@ -27,6 +27,8 @@ public abstract class Animal extends Object {
 
     }
 
+    public abstract void correr();
+
     public abstract void fazerBarulho();
 
     public void fazerBarulhoSemPolimorfismo() {
@@ -39,7 +41,6 @@ public abstract class Animal extends Object {
             Galinha obj = (Galinha) this;
             obj.fazerBarulho();
 
-           
         } else {
             this.fazerBarulho();
         }

@@ -23,6 +23,15 @@ public class AnimalTeste {
             public void fazerBarulho() {
                 JOptionPane.showMessageDialog(null, "Miauu");
             }
+
+            @Override
+            public void correr() {
+               
+                JOptionPane.showMessageDialog(null, "lisp");
+                
+                
+                
+            }
         };
         
         Animal toto = new Cachorro();
@@ -31,9 +40,11 @@ public class AnimalTeste {
         
         
         toto.fazerBarulho();
+        toto.correr();
         coco.fazerBarulho();
+        coco.correr();
         generico.fazerBarulhoSemPolimorfismo();
-        
+        generico.correr();
         
     }
 }
